@@ -1,0 +1,33 @@
+---
+title: "About"
+subtitle: "About the Silver Spur Club"
+format:
+  html:
+    include-after-body: ../_footer.html
+---
+
+The Silver Spur Club organizes equestrian events in Kitsap County and holds multiple events per year at our outdoor arena and covered facility. Our club values competition, camaraderie, and growth for riders at every experience level.
+
+### Officers and Board
+
+- Lan Taylor — President
+- Jessica Sharpe — Vice President
+- Erika Anderson — Secretary
+- Cas Taylor — Treasurer
+- Brittney Bell — Board Member
+- Vera Brusseau — Board Member
+- Carmen Farmer — Board Member
+- Suzie Knight — Board Member
+- Kelli Johnson — Board Member
+- Heather Miller — Board Member
+- Shannon Segerman — Board Member
+
+### Membership
+
+Memberships to the Silver Spur Club are annual and should be renewed by January 01 each year. To join, please fill out [this form](https://www.cognitoforms.com/SilverSpurClub1/_2026SILVERSPURCLUBMEMBERSHIPAPPLICATION), where you can pay your dues using PayPal.
+
+### What we do
+
+- Organizes equestrian events such as barrel races and game shows
+- Hosts at least one Junior Rodeo per year
+- Provides an outdoor arena and trails for members to ride throughout the year
