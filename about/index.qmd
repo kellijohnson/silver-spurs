@@ -1,0 +1,34 @@
+---
+title: "About"
+subtitle: "About the Silver Spurs Club"
+format:
+  html:
+    include-after-body: ../_footer.html
+---
+
+### About Silver Spurs
+
+Silver Spurs Club organizes equestrian events and supports the local community in Bremerton, Washington.
+
+We run events throughout the year at our outdoor arena and covered facility. Our club values competition, camaraderie, and growth for riders at every experience level.
+
+### Officers and Board
+
+- Lan Taylor — President
+- Jessica Sharpe — Vice President
+- Erika Anderson — Secretary
+- Cas Taylor — Treasurer
+- Brittney Bell — Board Member
+- Vera Brusseau — Board Member
+- Carmen Farmer — Board Member
+- Suzie Knight — Board Member
+- Kelli Johnson — Board Member
+- Heather Miller — Board Member
+- Shannon Segerman — Board Member
+
+### What we do
+
+- Organize equestrian events and series
+- Host at least one Junior Rodeo per year
+- Provide a location for members to ride
+- Maintain facilities for community equestrian activities

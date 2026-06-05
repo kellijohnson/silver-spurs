@@ -1,0 +1,69 @@
+---
+title: "Event Results"
+subtitle: "Browse recent Silver Spurs barrel racing results"
+format:
+  html:
+    include-after-body: _footer.html
+    self-contained: false
+---
+
+<div id="results-app">
+
+<div class="results-controls">
+  <label>Search:
+    <input type="search" id="results-search" placeholder="Search rider, horse, event, division" />
+  </label>
+  <label>Event:
+    <select id="results-event-filter">
+      <option value="">All events</option>
+    </select>
+  </label>
+  <label>Class:
+    <select id="results-class-filter">
+      <option value="">All classes</option>
+    </select>
+  </label>
+</div>
+
+<div id="results-summary">Loading results…</div>
+<div id="results-table"></div>
+
+</div>
+
+<script id="results-data" type="application/json">
+{{< include data/results.json >}}
+</script>
+<script src="scripts/results.js?v=20260604"></script>
+
+<style>
+.results-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.results-controls label {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-weight: 600;
+}
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+.results-table th,
+.results-table td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: left;
+}
+.results-table th {
+  background: #691C32;
+  color: white;
+}
+.results-table tbody tr:nth-child(even) {
+  background: #f7f7f7;
+}
+</style>

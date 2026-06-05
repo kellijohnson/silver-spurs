@@ -1,0 +1,32 @@
+---
+title: "Documents"
+subtitle: "Static club documents, bylaws, and meeting minutes"
+format:
+  html:
+    include-after-body: _footer.html
+---
+
+### Bylaws
+
+[Bylaws](pdfs/BylawsSilverSpursSept2022.pdf)
+
+### Standing Rules
+
+[Standing Rules](pdfs/StandingRulesRev2022.pdf)
+
+### Meeting Minutes
+
+<iframe
+  class="documents-embed"
+  src="https://docs.google.com/document/d/1pee18sl-lCu9nYxJsY-BeXfHtx8E0TpGi9DJPE3SImI/preview"
+  title="Silver Spurs meeting minutes"
+></iframe>
+
+<style>
+.documents-embed {
+  width: 100%;
+  min-height: 72vh;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+</style>

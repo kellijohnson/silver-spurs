@@ -1,0 +1,51 @@
+project:
+  type: website
+  render:
+    - "*.qmd"
+    - "about/*.qmd"
+    - "events/*.qmd"
+    - "results.qmd"
+    - "documents.qmd"
+  resources:
+    - "data/"
+    - "scripts/"
+    - "pdfs/"
+
+website:
+  title: "Silver Spurs Club"
+  description: "Silver Spurs Club - equestrian events and results in Kitsap County, WA."
+  site-url: "https://silverspurclub.org/"
+  favicon: images/favicon.ico
+  navbar:
+    background: "#691C32"
+    foreground: "#FFFFFF"
+    logo: images/silver-spurs-logo.png
+    title: "Silver Spurs"
+    search: false
+    right:
+      - href: index.qmd
+        text: "Home"
+      - href: about/index.qmd
+        text: "About"
+      - href: events/index.qmd
+        text: "Events"
+      - href: results.qmd
+        text: "Results"
+      - href: documents.qmd
+        text: "Documents"
+  announcement:
+    icon: info-circle
+    dismissable: true
+    content: "Welcome to the Silver Spurs Club website. Browse upcoming events and explore our event results."
+    type: light
+    position: below-navbar
+
+format:
+  html:
+    fontsize: 1.15rem
+    monofont: Fira Code
+    highlight-style: arrow
+    css: [theme.css, custom_theme.scss]
+    toc: false
+    code-overflow: scroll
+    linkcolor: "#B8573E"

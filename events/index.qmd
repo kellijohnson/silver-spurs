@@ -1,0 +1,173 @@
+---
+title: "Events"
+subtitle: "Equestrian events at Silver Spurs"
+format:
+  html:
+    include-after-body: ../_footer.html
+---
+
+### All Events
+
+Browse past and upcoming events. Click column headers to sort by date, event name, location, or type.
+
+<div id="events-app">
+
+<div class="events-controls">
+  <label>Event Type:
+    <select id="events-type-filter">
+      <option value="">All types</option>
+    </select>
+  </label>
+  <label>Status:
+    <select id="events-status-filter">
+      <option value="">All</option>
+      <option value="upcoming">Upcoming</option>
+      <option value="past">Past</option>
+    </select>
+  </label>
+</div>
+
+<div id="events-summary">Loading events…</div>
+<div id="events-table"></div>
+
+</div>
+
+<script id="events-data" type="application/json">
+{{< include ../data/events.json >}}
+</script>
+<script src="../scripts/events.js?v=20260605"></script>
+
+<style>
+.events-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.events-controls label {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.events-controls select {
+  padding: 0.5rem;
+  border: 2px solid #691C32;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  background-color: white;
+}
+
+.events-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.events-table th,
+.events-table td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.events-table th {
+  background: #691C32;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+
+.events-table th.sortable:hover {
+  background: #8B2541;
+}
+
+.events-table tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.events-table tbody tr.event-past {
+  opacity: 0.9;
+}
+
+.date-cell {
+  font-weight: 500;
+  color: #333;
+  white-space: nowrap;
+}
+
+.event-type-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: #E8D5CE;
+  color: #691C32;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status-cell {
+  text-align: center;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status-badge.status-upcoming {
+  background: #C8E6C9;
+  color: #2E7D32;
+}
+
+.status-badge.status-past {
+  background: #F0F0F0;
+  color: #666;
+}
+
+.actions-cell {
+  text-align: center;
+}
+
+.event-action-link {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: #B8573E;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.event-action-link:hover {
+  background: #932F1D;
+}
+
+.no-results {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.sort-indicator {
+  font-size: 0.75rem;
+  margin-left: 0.25rem;
+}
+
+#events-summary {
+  padding: 0.75rem;
+  background: #F5F5F5;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+</style>
