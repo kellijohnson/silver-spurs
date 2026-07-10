@@ -57,7 +57,7 @@
   },
   {
     "date": "2026-06-13",
-    "event": "Games Show #4",
+    "event": "Games Show #5",
     "location": "Silver Spur Arena",
     "type": "Games Show",
     "entryLink": "",
@@ -137,7 +137,7 @@
   },
   {
     "date": "2026-08-22",
-    "event": "Games Show #6",
+    "event": "Games Show #7",
     "location": "Silver Spur Arena",
     "type": "Games Show",
     "entryLink": "",
@@ -145,14 +145,6 @@
   },
   {
     "date": "2026-09-12",
-    "event": "Games Show #7",
-    "location": "Silver Spur Arena",
-    "type": "Games Show",
-    "entryLink": "",
-    "resultsLink": "#"
-  },
-  {
-    "date": "2026-09-26",
     "event": "Games Show #8",
     "location": "Silver Spur Arena",
     "type": "Games Show",
@@ -160,8 +152,16 @@
     "resultsLink": "#"
   },
   {
+    "date": "2026-09-26",
+    "event": "Games Show #9",
+    "location": "Silver Spur Arena",
+    "type": "Games Show",
+    "entryLink": "",
+    "resultsLink": "#"
+  },
+  {
     "date": "2026-10-10",
-    "event": "Games Show #7",
+    "event": "Games Show #10",
     "location": "Boand Arena",
     "type": "Games Show",
     "entryLink": "",
@@ -177,7 +177,7 @@
   },
   {
     "date": "2026-10-24",
-    "event": "Games Show #7",
+    "event": "Games Show #11",
     "location": "Boand Arena",
     "type": "Games Show",
     "entryLink": "",
