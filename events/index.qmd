@@ -35,7 +35,7 @@ Browse past and upcoming events using the table below. You can click on the colu
 <script id="events-data" type="application/json">
 {{< include ../data/events.json >}}
 </script>
-<script src="../scripts/events.js?v=20260605"></script>
+<script src="../scripts/events.js?v=20260710"></script>
 
 <style>
 .events-controls {

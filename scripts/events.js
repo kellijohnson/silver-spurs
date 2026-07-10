@@ -10,8 +10,13 @@ let sortAscending = true;
 
 const formatCell = (value) => value === null || value === undefined || value === '' ? '-' : value;
 
+const parseEventDate = (dateString) => {
+  const [year, month, day] = dateString.split('-').map(Number);
+  return new Date(year, month - 1, day);
+};
+
 const formatDate = (dateString) => {
-  const date = new Date(dateString + 'T00:00:00Z');
+  const date = parseEventDate(dateString);
   return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 };
 
@@ -19,7 +24,7 @@ const getEventStatus = (event) => {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 
-  const eventDate = new Date(`${event.date}T00:00:00`);
+  const eventDate = parseEventDate(event.date);
   return eventDate < today ? 'past' : 'upcoming';
 };
 
@@ -108,8 +113,8 @@ const sortEvents = (data) => {
 
     // Handle date sorting specially
     if (sortColumn === 'date') {
-      aVal = new Date(aVal);
-      bVal = new Date(bVal);
+      aVal = parseEventDate(aVal);
+      bVal = parseEventDate(bVal);
     } else if (sortColumn === 'status') {
       aVal = getEventStatus(a);
       bVal = getEventStatus(b);
