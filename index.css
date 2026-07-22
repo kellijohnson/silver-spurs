@@ -1,5 +1,106 @@
 /* ----------- INDEX PAGE -----------*/
 
+.home-image-banner {
+  width: min(100%, 960px);
+  margin: 1.25rem auto 1.75rem;
+  overflow: hidden;
+  border: 3px solid #691C32;
+  border-radius: 6px;
+  background: #f7f7f7;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.home-image-track {
+  display: flex;
+  width: max-content;
+  animation: home-banner-scroll 26s linear infinite;
+}
+
+.home-image-banner:hover .home-image-track {
+  animation-play-state: paused;
+}
+
+.home-image-track img {
+  width: min(82vw, 460px);
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  flex: 0 0 auto;
+  padding: 0.75rem;
+  background: #fff;
+}
+
+.home-banner-image-button {
+  display: block;
+  flex: 0 0 auto;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.home-banner-image-button:focus-visible {
+  outline: 3px solid #B8573E;
+  outline-offset: -3px;
+}
+
+.home-banner-image-button img {
+  display: block;
+}
+
+.home-image-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.82);
+}
+
+.home-image-lightbox[hidden] {
+  display: none;
+}
+
+.home-image-lightbox img {
+  max-width: min(96vw, 980px);
+  max-height: 90vh;
+  object-fit: contain;
+  background: #fff;
+}
+
+.home-image-lightbox-close {
+  position: fixed;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0;
+  border-radius: 50%;
+  background: #fff;
+  color: #222;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+@keyframes home-banner-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-image-track {
+    width: auto;
+    overflow-x: auto;
+    animation: none;
+  }
+}
+
 .home-feature-image {
   display: block;
   width: min(100%, 920px);
@@ -387,4 +488,3 @@ img.lens-logo {
 img {
     max-width: 100%;
 }
-
