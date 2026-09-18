@@ -8,6 +8,12 @@ format:
 
 The Silver Spur Club organizes equestrian events in Kitsap County and holds multiple events per year at our outdoor arena and covered facility. Our club values competition, camaraderie, and growth for riders at every experience level.
 
+Our members enjoy riding in our outdoor arena yearround, riding on the trails surrounding the outdoor arena, competing at events such as barrel races and game shows hosted by our club, and volunteering at our club-sponsored Junior Rodeo, as well as other events.
+
+### Membership
+
+Memberships to the Silver Spur Club are annual and should be renewed by January 01 each year. To join, please fill out [this form](https://www.cognitoforms.com/SilverSpurClub1/_2026SILVERSPURCLUBMEMBERSHIPAPPLICATION), where you can pay your dues using PayPal.
+
 ### Officers and Board
 
 - Lan Taylor — President
@@ -22,12 +28,93 @@ The Silver Spur Club organizes equestrian events in Kitsap County and holds mult
 - Heather Miller — Board Member
 - Shannon Segerman — Board Member
 
-### Membership
+### Royalty
 
-Memberships to the Silver Spur Club are annual and should be renewed by January 01 each year. To join, please fill out [this form](https://www.cognitoforms.com/SilverSpurClub1/_2026SILVERSPURCLUBMEMBERSHIPAPPLICATION), where you can pay your dues using PayPal.
+Meet our current 2026 royalty.
 
-### What we do
+![2026 Silver Spur Queen Ashlynn Clemo](../images/SilverSpursRoyalty.jpg){.royalty-photo fig-alt="2026 Silver Spur Queen Ashlynn Clemo"}
 
-- Organizes equestrian events such as barrel races and game shows
-- Hosts at least one Junior Rodeo per year
-- Provides an outdoor arena and trails for members to ride throughout the year
+#### Past and Present Royalty
+
+<div class="royalty-table-wrapper">
+  <table class="royalty-table">
+    <thead>
+      <tr>
+        <th scope="col">Year</th>
+        <th scope="col">Name</th>
+        <th scope="col">Position</th>
+      </tr>
+    </thead>
+    <tbody id="royalty-table-body"></tbody>
+  </table>
+</div>
+
+<script id="royalty-data" type="application/json">
+{{< include ../data/royalty.json >}}
+</script>
+
+<script>
+(() => {
+  const dataElement = document.getElementById('royalty-data');
+  const tableBody = document.getElementById('royalty-table-body');
+
+  try {
+    const royalty = JSON.parse(dataElement.textContent);
+
+    royalty.forEach((member) => {
+      const row = document.createElement('tr');
+      const values = [member.year, `${member.firstName} ${member.lastName}`, member.position];
+
+      values.forEach((value) => {
+        const cell = document.createElement('td');
+        cell.textContent = value;
+        row.appendChild(cell);
+      });
+
+      tableBody.appendChild(row);
+    });
+  } catch (error) {
+    const row = tableBody.insertRow();
+    const cell = row.insertCell();
+    cell.colSpan = 3;
+    cell.textContent = 'Royalty information is temporarily unavailable.';
+    console.error('Unable to load royalty data.', error);
+  }
+})();
+</script>
+
+<style>
+.royalty-photo {
+  display: block;
+  width: min(100%, 720px);
+  height: auto;
+  margin: 1.25rem auto 1.75rem;
+  border-radius: 6px;
+}
+
+.royalty-table-wrapper {
+  overflow-x: auto;
+}
+
+.royalty-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0 2rem;
+}
+
+.royalty-table th,
+.royalty-table td {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.royalty-table th {
+  background: #691C32;
+  color: white;
+}
+
+.royalty-table tbody tr:nth-child(even) {
+  background: #f7f7f7;
+}
+</style>
