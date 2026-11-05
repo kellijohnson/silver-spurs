@@ -13,14 +13,10 @@ format:
 ```{=html}
 <div class="home-image-banner" aria-label="Featured Silver Spur events">
   <div class="home-image-track">
-    <button class="home-banner-image-button" type="button" data-full-image="images/KitsapHalloweenBash.png" data-full-image-alt="Kitsap Halloween Bash flyer">
-      <img src="images/KitsapHalloweenBash.png" alt="Kitsap Halloween Bash flyer">
+    <button class="home-banner-image-button" type="button" data-full-image="images/SilverSpurBoardMeeting.jpeg" data-full-image-alt="Kitsap Halloween Bash flyer">
+      <img src="images/SilverSpurBoardMeeting.jpeg" alt="Kitsap Halloween Bash flyer">
     </button>
-    <button class="home-banner-image-button" type="button" data-full-image="images/RoyaltyTryouts.jpeg" data-full-image-alt="Kitsap Halloween Bash flyer">
-      <img src="images/RoyaltyTryouts.jpeg" alt="Kitsap Halloween Bash flyer">
-    </button>
-    <img src="images/KitsapHalloweenBash.png" alt="" aria-hidden="true">
-    <img src="images/RoyaltyTryouts.jpeg" alt="" aria-hidden="true">
+    <img src="images/SilverSpurBoardMeeting.jpeg" alt="" aria-hidden="true">
   </div>
 </div>
 
